@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Profile</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="page">
+    <div class="profile__container">
+      <h2 class="profile__title">User Profile</h2>
+
+      <form class="profile__form" id="profile-form">
+
+        <div class="profile__group" id="name-group">
+          <input class="profile__input" type="text" id="name" placeholder="Full Name" />
+          <p class="profile__error" id="name-error"></p>
+        </div>
+
+        <div class="profile__group" id="email-group">
+          <input class="profile__input" type="text" id="email" placeholder="Email" />
+          <p class="profile__error" id="email-error"></p>
+        </div>
+
+        <button class="profile__button" type="submit">Submit</button>
+      </form>
+
+      <div class="note">
+        <div class="note__container">
+          <h2 class="note__title">Temporary Note</h2>
+
+          <textarea class="note__textarea" id="note-input" placeholder="Write your note..."></textarea>
+          <p class="profile__error" id="textarea-error"></p>
+          <button class="note__button" type="button" id="save-note">
+            Save Note
+          </button>
+        </div>
+      </div>
+
+      <div class="cookie-banner" id="cookie-banner">
+        <p class="cookie-banner__text">
+          We use cookies to improve your experience on this website.
+        </p>
+        <button class="cookie-banner__button" id="accept-cookie">
+          Accept
+        </button>
+      </div>
+
+      <button class="clear-button" id="clear-all">
+        Clear All
+      </button>
+
+      <div class="joke">
+        <div class="joke__container">
+          <button class="joke__button" id="get-joke">
+            Get Joke
+          </button>
+
+          <div class="joke__text" id="joke-text">
+            Click the button to get a joke
+          </div>
+        </div>
+      </div>
+      <div class="countdown">
+        <div class="countdown__container">
+          <button class="countdown__button" id="start-countdown">
+            Start Countdown
+          </button>
+
+          <div class="countdown__display" id="countdown-display"></div>
+        </div>
+      </div>
+      <div class="tick">
+        <div class="tick__container">
+          <button class="tick__button" id="start-tick">
+            Start Ticking
+          </button>
+
+          <button class="tick__button tick__button--stop" id="stop-tick">
+            Stop Ticking
+          </button>
+
+          <div class="tick__display" id="tick-display">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </div>
+</body>
+
+</html>
+<!--  -->
