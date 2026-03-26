@@ -1,1 +1,1 @@
-# TS-Lesson-2
+# JS-Lesson-6
