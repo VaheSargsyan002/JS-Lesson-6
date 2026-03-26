@@ -1,0 +1,315 @@
+:root {
+  --color-background: #f5f7fa;
+  --color-banner-background: #111827;
+  --color-border: #dcdfe6;
+  --color-primary: #4f46e5;
+  --color-primary-hover: #4338ca;
+  --color-text: #1f2937;
+  --color-white: #ffffff;
+
+  --radius: 8px;
+
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: Arial, sans-serif;
+}
+
+.clear-button {
+  background-color: #dc2626;
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  cursor: pointer;
+  display: block;
+  margin: var(--spacing-lg) auto;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.clear-button:hover {
+  background-color: #b91c1c;
+}
+
+.cookie-banner {
+  align-items: center;
+  background-color: var(--color-banner-background);
+  bottom: 0;
+  display: flex;
+  gap: var(--spacing-md);
+  justify-content: space-between;
+  left: 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  position: fixed;
+  width: 100%;
+}
+
+.cookie-banner--hidden {
+  display: none;
+}
+
+.cookie-banner__text {
+  color: var(--color-white);
+  font-size: var(--font-size-md);
+}
+
+.cookie-banner__button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.cookie-banner__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-lg);
+}
+
+.countdown__container {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-width: 400px;
+  padding: var(--spacing-lg);
+  text-align: center;
+  width: 100%;
+}
+
+.countdown__button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.countdown__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.countdown__display {
+  font-size: 32px;
+  font-weight: bold;
+  min-height: 40px;
+}
+
+.joke {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-lg);
+}
+
+.joke__container {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-width: 500px;
+  padding: var(--spacing-lg);
+  text-align: center;
+  width: 100%;
+}
+
+.joke__button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.joke__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.joke__text {
+  font-size: var(--font-size-md);
+  min-height: 40px;
+}
+.page {
+  display: flex;
+  justify-content: center;
+  min-height: 150vh;
+  padding: var(--spacing-lg);
+}
+
+.profile__container {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-width: 400px;
+  padding: var(--spacing-lg);
+  width: 100%;
+}
+
+.profile__title {
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.profile__group {
+  width: 100%;
+}
+
+.profile__input {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: var(--font-size-md);
+  padding: var(--spacing-sm);
+  width: 100%;
+}
+
+.profile__input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.profile__button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  padding: var(--spacing-sm);
+  transition: background-color 0.3s ease;
+}
+
+.profile__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.profile__error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.textarea-error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+  min-height: 16px;
+}
+
+.note {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-lg);
+}
+
+.note__container {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-width: 500px;
+  padding: var(--spacing-lg);
+  width: 100%;
+}
+
+.note__title {
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.note__textarea {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  min-height: 120px;
+  padding: var(--spacing-sm);
+  resize: none;
+  width: 100%;
+}
+
+.note__textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.note__button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  cursor: pointer;
+  margin-top: var(--spacing-md);
+  padding: var(--spacing-sm);
+  width: 100%;
+}
+
+.note__button:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.tick {
+  display: flex;
+  justify-content: center;
+  padding: var(--spacing-lg);
+}
+
+.tick__container {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  max-width: 400px;
+  padding: var(--spacing-lg);
+  text-align: center;
+  width: 100%;
+}
+
+.tick__button {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  margin: 4px;
+  padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.tick__button--stop {
+  background-color: #dc2626;
+}
+
+.tick__display {
+  font-size: var(--font-size-md);
+  margin-top: var(--spacing-md);
+  min-height: 30px;
+}
